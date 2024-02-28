@@ -4,7 +4,6 @@ using Telegram.Bot.Services;
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
     {
-        // Register Bot configuration
         services.Configure<BotConfiguration>(
             context.Configuration.GetSection(BotConfiguration.Configuration));
 
